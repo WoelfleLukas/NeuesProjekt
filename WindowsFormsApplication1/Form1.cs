@@ -25,11 +25,11 @@ namespace WindowsFormsApplication1
         {
             try
             {
-                OleDbConnectionStringBuilder bldr = new OleDbConnectionStringBuilder();
+                //OleDbConnectionStringBuilder bldr = new OleDbConnectionStringBuilder();
 
-                bldr.Provider = "Microsoft.ACE.OLEDB.12.0";
-                bldr.DataSource = "Bestellung.accdb";
-                con = new OleDbConnection(bldr.ConnectionString);
+                //bldr.Provider = "Microsoft.ACE.OLEDB.12.0";
+                //bldr.DataSource = "Bestellung.accdb";
+                con = new OleDbConnection(Properties.Settings.Default.DBcon);
                 con.Open();
             }
             catch(Exception b)
