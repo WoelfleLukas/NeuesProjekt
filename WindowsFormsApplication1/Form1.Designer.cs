@@ -32,6 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBoxArtikelGruppe = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -62,6 +63,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "auslesen";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // listBox1
             // 
@@ -71,11 +73,19 @@
             this.listBox1.Size = new System.Drawing.Size(252, 121);
             this.listBox1.TabIndex = 3;
             // 
+            // textBoxArtikelGruppe
+            // 
+            this.textBoxArtikelGruppe.Location = new System.Drawing.Point(172, 39);
+            this.textBoxArtikelGruppe.Name = "textBoxArtikelGruppe";
+            this.textBoxArtikelGruppe.Size = new System.Drawing.Size(100, 20);
+            this.textBoxArtikelGruppe.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.textBoxArtikelGruppe);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -83,6 +93,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,6 +103,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox textBoxArtikelGruppe;
     }
 }
 
